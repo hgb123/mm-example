@@ -48,6 +48,8 @@ function App() {
 
   return (
     <div>
+      <h1>MetaMask example</h1>
+
       <button onClick={handleConnect} disabled={!metamaskInstalled || account}>
         {!metamaskInstalled
           ? 'Please install Metamask'
