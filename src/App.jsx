@@ -56,8 +56,12 @@ function App() {
           : 'Connected'}
       </button>
 
-      <p>Account: {account}</p>
-      <p>Network: {chainIdNameMap.get(chainId)}</p>
+      {account ? (
+        <>
+          <p>Account: {account}</p>
+          <p>Network: {chainIdNameMap.get(chainId)}</p>
+        </>
+      ) : null}
     </div>
   )
 }
